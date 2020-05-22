@@ -1,3 +1,6 @@
+// import java.util.ArrayList;
+// import java.util.List;
+
 public class CardHolder {
     private String firstName;
     private String lastName;
@@ -7,6 +10,9 @@ public class CardHolder {
     private boolean hasFines;
     private boolean canCheckout;
     private boolean canReserve;
+    // private List<Book> overdueLoans = new ArrayList<>();
+    
+
 
     public CardHolder(String firstName, String lastName, int age, int yearJoined, int cardNumber, boolean hasFines, boolean canCheckout, boolean canReserve){
         this.firstName = firstName;
@@ -79,8 +85,7 @@ public class CardHolder {
     }
 
     public void setCanCheckout(boolean canCheckout){
-        this.canCheckout = canCheckout;
-        
+        this.canCheckout = canCheckout;        
     }
 
     public void setCanReserve(boolean canReserve){

@@ -3,8 +3,8 @@ public class BookGeneral extends Book {
     private int daysLoaned;
     private boolean ebook, audiobook;
     
-    public BookGeneral(String title, boolean isAvailable, boolean isReservable, boolean isLate, String genre, String checkoutDate, String returnDate, String pg, int daysLoaned, boolean ebook, boolean audiobook ) {
-        super(title, isAvailable, isReservable, isLate);
+    public BookGeneral(String title, boolean isAvailable, boolean isReservable, boolean isLate, String genre, String checkoutDate, String returnDate, String pg, int daysLoaned, boolean ebook, boolean audiobook) {
+        super(title, isAvailable, isReservable, pg, audiobook);
 
         this.genre = genre;
         this.checkoutDate = checkoutDate;
